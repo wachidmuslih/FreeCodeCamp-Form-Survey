@@ -1,80 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <link rel="stylesheet" href="style.css">
-  <title>FreeCodeCamp Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+    <title>FreeCodeCamp Survey Form</title>
 </head>
 
 <body>
-  <div class="container">
-    <!-- Class Header -->
-    <div class="header">
-      <h1 class="title" id="title">freeCodeCamp Survey Form</h1>
-      <p class="description">Thank you for taking the time to help us improve the platform</p>
+    <div class="container">
+        <!-- Class Header -->
+        <div class="header">
+            <h1 id="title">FreeCodeCamp Survey Form</h1>
+            <p id="description">Thank you for taking the time to help us improve the platform</p>
+        </div>
+
+        <!-- Class Survey Form -->
+        <div class="survey-form">
+            <form id="survey-form">
+                <!-- Input Fields -->
+                <div id="input-fields">
+                    <!-- Name Input -->
+                    <div id="form-group">
+                        <label for="name" id="name-label">Name</label>
+                        <input class="name" id="name" type="text" name="name" class="form-control"
+                            placeholder="Enter Your Name" required />
+                    </div>
+
+                    <!-- Email Input -->
+                    <div id="form-group">
+                        <label for="email" id="email-label">Email</label>
+                        <input class="email" id="email" type="email" name="email" class="form-control"
+                            placeholder="Enter Your Email" required />
+                    </div>
+
+                    <!-- Age Input -->
+                    <div id="form-group">
+                        <label for="number" id="number-label">Email</label>
+                        <input class="number" id="number" type="number" name="age" class="form-control" min="1" max="99"
+                            placeholder="Age" required />
+                    </div>
+                </div>
+                <!-- Dropdown for Role -->
+                <div class="role-dropdown">
+                    <label for="dropdown" id="dropdown-label">Which option best describes your current role?</label>
+                    <select class="dropdown" id="dropdown" name="dropdown" class="form-control" required />
+                    <option disabled="" selected="" value="">Select current role</option>
+                    <option value="student">Student</option>
+                    <option value="job">Full Time Job</option>
+                    <option value="learner">Full Time Learner</option>
+                    <option value="preferNo">Prefer Not to Say</option>
+                    <option value="other">Other</option>
+                    </select>
+                </div>
+                <!-- Recommendation Input -->
+                <div class="recommendation">
+                    <p>Would you recommend freeCodeCamp to a friend?</p>
+                    <label>
+                        <input name="user-recommendation" value="definitely" type="radio" class="input-radio"
+                            checked />Definitely
+                    </label>
+                    <input name="user-recommendation" value="maybe" type="radio" class="input-radio" checked />Maybe
+                    </label>
+                    <input name="user-recommendation" value="not-sure" type="radio" class="input-radio" checked />Not
+                    Sure
+                    </label>
+                </div>
+                <!-- favorite Feature Input -->
+                <div class="favorite-feature">
+                    <p>What is your favorite feature of freeCodeCamp?</p>
+                    <label>
+                        <input type="checkbox" name="prefer" value="challenges" class="input-checkbox" />Front-end Projects
+                    </label>
+                    <label>
+                        <input type="checkbox" name="prefer" value="challenges" class="input-checkbox"/>Back-end Projects
+                    </label>
+                    <label>
+                        <input type="checkbox" name="prefer" value="challenges" class="input-checkbox" />Data Visualization
+                    </label>
+                    <label>
+                        <input type="checkbox" name="prefer" value="challenges" class="input-checkbox" />Challenges
+                    </label>
+                    <label>
+                        <input type="checkbox" name="prefer" value="comunity" class="input-checkbox"/>Open Source Comunity
+                    </label>
+                </div>
+            </form>
+        </div>
     </div>
-
-    <!-- Class Survey Form -->
-    <div class="survey-form">
-      <!-- Name Input -->
-      <div class="form-group">
-        <label for="name" id="name-label">Name</label>
-        <input class="name" id="name" type="text" name="name" class="form-control" placeholder="Enter Your Name" required />
-      </div>
-
-      <!-- Email Input -->
-      <div class="form-group">
-        <label for="email" id="email-label">Email</label>
-        <input class="email" id="email" type="email" name="email" class="form-control" placeholder="Enter Your Email" required />
-      </div>
-
-      <!-- Age Input -->
-      <div class="form-group">
-        <label for="number" id="number-label">Email</label>
-        <input class="number" id="number" type="number" name="age" class="form-control"  min="1" max="99" placeholder="Age" required />
-      </div>
-    </div>
-
-    <!-- Role Input -->
-    <div class="form-group">
-      <label for="role" id="role-label">Which option best describes your current role?</label>
-      <select class="role" id="role"  name="role" class="form-control" required/>
-      <option disabled="" selected="" value="">Select current role</option>
-      <option value="student">Student</option>
-      <option value="job">Full Time Job</option>
-      <option value="learner">Full Time Learner</option>
-      <option value="preferNo">Prefer Not to Say</option>
-      <option value="other">Other</option>
-      </select>
-    </div>
-  </div>
-
-  <!-- Recommendation Input -->
-  <div class="form-group">
-    <p>Would you recommend freeCodeCamp to a friend?</p>
-    <label>
-          <input name="user-recommendation" value="definitely" type="radio" class="input-radio" checked/>Definitely
-        </label>
-    <input name="user-recommendation" value="maybe" type="radio"class="input-radio" checked/>Maybe
-    </label>
-    <input name="user-recommendation" value="not-sure" type="radio"class="input-radio" checked/>Not Sure
-    </label>
-  </div>
-  </div>
-
-  <!-- Favorite Feature Input -->
-  <div class="form-group">
-    <p>What is your favorite feature of freeCodeCamp?
-      <span class="clue">(Check all that apply)</span>
-    </p>
-    <select class="feature" id="feature"  name="feature" required>
-      <label>
-        <input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox">Front-end Projects</label>
-    </select>
-  </div>
-  </div>
-
-
-  </div>
 </body>
 
 </html>

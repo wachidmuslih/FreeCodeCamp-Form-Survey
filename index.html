@@ -41,7 +41,7 @@
                     </div>
                 </div>
                 <!-- Dropdown for Role -->
-                <div class="role-dropdown">
+                <div id="role-form">
                     <label for="dropdown" id="dropdown-label">Which option best describes your current role?</label>
                     <select class="dropdown" id="dropdown" name="dropdown" class="form-control" required />
                     <option disabled="" selected="" value="">Select current role</option>
@@ -53,7 +53,7 @@
                     </select>
                 </div>
                 <!-- Recommendation Input -->
-                <div class="recommendation">
+                <div id="recommendation-form">
                     <p>Would you recommend freeCodeCamp to a friend?</p>
                     <label>
                         <input name="user-recommendation" value="definitely" type="radio" class="input-radio"
@@ -66,7 +66,7 @@
                     </label>
                 </div>
                 <!-- favorite Feature Input -->
-                <div class="favorite-feature">
+                <div id="favorite-form">
                     <p>What is your favorite feature of freeCodeCamp?</p>
                     <label>
                         <input type="checkbox" name="prefer" value="challenges" class="input-checkbox" />Front-end Projects
@@ -83,6 +83,16 @@
                     <label>
                         <input type="checkbox" name="prefer" value="comunity" class="input-checkbox"/>Open Source Comunity
                     </label>
+                </div>
+                <!-- Suggestion Text Area -->
+                <div id="suggestion-form">
+                    <label for="comment" id="comment-label">Any comments or suggestions?</label>
+                    <textarea class="comment" id="comment" name="comment" placeholder="Enter your comment here..."></textarea>
+                </div>
+
+                <!-- Submit Button -->
+                <div id="submit-button">
+                    <button type="submit" id="submit">Submit</button>
                 </div>
             </form>
         </div>

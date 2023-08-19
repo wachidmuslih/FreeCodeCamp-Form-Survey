@@ -18,7 +18,7 @@
         <div class="survey-form">
             <form id="survey-form">
                 <!-- Input Fields -->
-                <div id="input-fields">
+                <fieldset id="input-fields">
                     <!-- Name Input -->
                     <div id="form-group">
                         <label for="name" id="name-label">Name</label>
@@ -39,9 +39,9 @@
                         <input class="number" id="number" type="number" name="age" class="form-control" min="1" max="99"
                             placeholder="Age" required />
                     </div>
-                </div>
+                </fieldset>
                 <!-- Dropdown for Role -->
-                <div id="role-form">
+                <fieldset id="role-form">
                     <label for="dropdown" id="dropdown-label">Which option best describes your current role?</label>
                     <select class="dropdown" id="dropdown" name="dropdown" class="form-control" required />
                     <option disabled="" selected="" value="">Select current role</option>
@@ -51,52 +51,61 @@
                     <option value="preferNo">Prefer Not to Say</option>
                     <option value="other">Other</option>
                     </select>
-                </div>
+                </fieldset>
                 <!-- Recommendation Input -->
-                <div id="recommendation-form">
-                    <p>Would you recommend freeCodeCamp to a friend?</p>
-                    <label>
-                        <input name="user-recommendation" value="definitely" type="radio" class="input-radio"
-                            checked />Definitely
-                    </label>
-                    <input name="user-recommendation" value="maybe" type="radio" class="input-radio" checked />Maybe
-                    </label>
-                    <input name="user-recommendation" value="not-sure" type="radio" class="input-radio" checked />Not
-                    Sure
-                    </label>
-                </div>
+                <fieldset id="recommendation-form">
+                    <p class="recommendation">Would you recommend freeCodeCamp to a friend?</p>
+                    <label for="definitely">
+                        <input id="definitely" name="user-recommendation" value="definitely" type="radio"
+                            class="input-radio" checked />Definitely
+                    </label><br>
+                    <label for="maybe">
+                        <input id="maybe" name="user-recommendation" value="maybe" type="radio" class="input-radio"
+                            checked />Maybe
+                    </label><br>
+                    <label for="not-sure">
+                        <input id="not-sure" name="user-recommendation" value="not-sure" type="radio"
+                            class="input-radio" checked />Not Sure
+                    </label><br>
+                </fieldset>
                 <!-- favorite Feature Input -->
-                <div id="favorite-form">
-                    <p>What is your favorite feature of freeCodeCamp?</p>
+                <fieldset id="favorite-form">
+                    <p class="favorite">What is your favorite feature of freeCodeCamp?</p>
                     <label>
-                        <input type="checkbox" name="prefer" value="challenges" class="input-checkbox" />Front-end Projects
-                    </label>
+                        <input type="checkbox" name="prefer" value="challenges" class="input-checkbox" />Front-end
+                        Projects
+                    </label><br>
                     <label>
-                        <input type="checkbox" name="prefer" value="challenges" class="input-checkbox"/>Back-end Projects
-                    </label>
+                        <input type="checkbox" name="prefer" value="challenges" class="input-checkbox" />Back-end
+                        Projects
+                    </label><br>
                     <label>
-                        <input type="checkbox" name="prefer" value="challenges" class="input-checkbox" />Data Visualization
-                    </label>
+                        <input type="checkbox" name="prefer" value="challenges" class="input-checkbox" />Data
+                        Visualization
+                    </label><br>
                     <label>
                         <input type="checkbox" name="prefer" value="challenges" class="input-checkbox" />Challenges
-                    </label>
+                    </label><br>
                     <label>
-                        <input type="checkbox" name="prefer" value="comunity" class="input-checkbox"/>Open Source Comunity
-                    </label>
-                </div>
+                        <input type="checkbox" name="prefer" value="comunity" class="input-checkbox" />Open Source
+                        Comunity
+                    </label><br>
+                </fieldset>
                 <!-- Suggestion Text Area -->
-                <div id="suggestion-form">
+                <fieldset id="suggestion-form">
                     <label for="comment" id="comment-label">Any comments or suggestions?</label>
-                    <textarea class="comment" id="comment" name="comment" placeholder="Enter your comment here..."></textarea>
-                </div>
-
+                    <textarea class="comment" id="comment" name="comment"
+                        placeholder="Enter your comment here..."></textarea>
+                </fieldset>
                 <!-- Submit Button -->
-                <div id="submit-button">
+                <fieldset id="submit-button">
                     <button type="submit" id="submit">Submit</button>
-                </div>
+                </fieldset>
             </form>
         </div>
     </div>
 </body>
 
 </html>
+
+<!-- link ref: https://github.com/FreeCodeCamp-Solutions/Build-a-Survey-Form/blob/master/index.html -->

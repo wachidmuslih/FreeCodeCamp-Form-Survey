@@ -1,0 +1,136 @@
+body{
+    background-image: url("https://hips.hearstapps.com/hmg-prod/images/2023-subaru-wrx-rally-01-64ca7c4a45990.jpg?crop=0.8334318943425981xw:1xh;center,top&resize=1200:*");
+    font-family: 'Roboto', sans-serif;
+    background-size: cover;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: black;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1.5;
+    color: black;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: black;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    box-sizing: border-box;
+}
+.container{
+    width: 80vh;
+    min-width: 600px;
+    display: block;
+    margin: 20px auto;
+    /* justify-content: center;
+    align-items: center; */
+    background-color: whitesmoke;
+    padding: 30px;
+    border-radius: 20px;
+}
+.header{
+    padding-bottom: 20px;
+}
+.survey-form{
+    padding: 10px 0;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+fieldset{
+    border: none;
+    padding: 10px;
+}
+input, textarea{
+    width: 100%;
+    padding: 10px;
+    margin: 6px 0 10px 0;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-sizing: border-box;
+    min-height: 2em;
+}
+label{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: black;
+    text-align: left;
+    margin: 10px 0 0 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.role-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+select{
+    width: 100%;
+    padding: 10px 0;
+    margin: 6px 0 10px 0;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.recommendation{
+    font-size: 20px;
+    font-weight: 400;
+    text-align: left;
+}
+.recommendation-form{
+    padding: 10px 0;
+    display: block;
+}
+.input-radio{
+    width: unset;
+    margin: 0 10px 0 0;
+    vertical-align: middle;
+}
+.favorite{
+    font-size: 20px;
+    font-weight: 400;
+    text-align: left;
+}
+.input-checkbox{
+    width: unset;
+    margin: 0 10px 0 0;
+    vertical-align: middle;
+}
+.favorite-form{
+    padding: 10px 0;
+    display: flex;
+}
+.suggestions-form{
+    font-size: 20px;
+    font-weight: 400;
+    text-align: left;
+    padding: 10px 0;
+    display: flex;
+}
+button{
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 6px;
+    color: white;
+    background-color: blue;
+    font-size: large;
+}
+
